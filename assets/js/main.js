@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
                     navLinks.forEach(link => {
                         link.classList.remove("active");
-                        if (link.getAttribute("href") === `index.html#${currentSectionId}` || link.getAttribute("href") === `#${currentSectionId}`) {
+                        if (link.getAttribute("href") === `/index.html#${currentSectionId}` || link.getAttribute("href") === `#${currentSectionId}`) {
                             link.classList.add("active");
                         }
                     });
