@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title> Sudarson Nanthacoumarane | Portfolio </title>
+
+    <!-- Import common page fonts and attributes -->
     <script>
-      fetch('head.html')
+        fetch('/partials/head.html?1')
         .then(response => response.text())
         .then(data => {
-          document.head.insertAdjacentHTML('beforeend', data);
+            document.head.insertAdjacentHTML('beforeend', data);
         });
     </script>
 
-    <link rel="stylesheet" href="assets/css/main.css?2">
+    <link rel="stylesheet" href="/assets/css/main.css?2">
     <meta charset="UTF-8">
 </head>
 
@@ -39,7 +42,7 @@
         <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
             <div class="about-layout">
-                <img src="assets/img/profile-picture.jpeg" alt="About Me">
+                <img src="/assets/img/profile-picture.jpeg" alt="About Me">
                 <div class="about-text">
                     <p>Mechanical Engineer with 4+ years of R&D experience in robotics and automotive applications. Proven track record in CAD/CAE design, FEA, and product lifecycle management. Seeking innovation-driven opportunities to develop high-performance mechanical systems.</p>
                 </div>
@@ -90,25 +93,26 @@
             </div>
         </section>
 
-<section id="logo-banner" class="logo-banner" data-aos="fade-up">
-  <div class="logo-row">
-    <div class="logo-item" data-tooltip="Vitibot">
-      <img src="assets/img/logos/VitiBot_logo.png" alt="Vitibot Logo">
-    </div>
-    <div class="logo-item" data-tooltip="CNRS">
-      <img src="assets/img/logos/cnrs.png" alt="CNRS Logo">
-    </div>
-    <div class="logo-item" data-tooltip="Centrale Nantes">
-      <img src="assets/img/logos/Centrale_Nantes_Large.png" alt="Centrale Nantes Logo">
-    </div>
-    <div class="logo-item" data-tooltip="Makara Circle">
-      <img src="assets/img/logos/Makara_logo.png" alt="Makara Circle Logo">
-    </div>
-    <div class="logo-item" data-tooltip="BMSIT">
-      <img src="assets/img/logos/bmsit.png" alt="BMSIT Logo">
-    </div>
-  </div>
-</section>
+        <!-- Logo Banner -->
+        <section id="logo-banner" class="logo-banner" data-aos="fade-up">
+            <div class="logo-row">
+                <div class="logo-item" data-tooltip="Vitibot">
+                    <img src="/assets/img/logos/VitiBot_logo.png" alt="Vitibot Logo">
+                </div>
+                <div class="logo-item" data-tooltip="CNRS">
+                    <img src="/assets/img/logos/cnrs.png" alt="CNRS Logo">
+                </div>
+                <div class="logo-item" data-tooltip="Centrale Nantes">
+                    <img src="/assets/img/logos/Centrale_Nantes_Large.png" alt="Centrale Nantes Logo">
+                </div>
+                <div class="logo-item" data-tooltip="Makara Circle">
+                    <img src="/assets/img/logos/Makara_logo.png" alt="Makara Circle Logo">
+                </div>
+                <div class="logo-item" data-tooltip="BMSIT">
+                    <img src="/assets/img/logos/bmsit.png" alt="BMSIT Logo">
+                </div>
+            </div>
+        </section>
 
 
         <!-- Portfolio Section -->
@@ -118,42 +122,42 @@
 
                 <div class="portfolio-item">
                     <a href="project-vitibot.html">
-                        <img src="assets/img/Ratio 3-2/BAKUS1.jpg" alt="VitiBot">
+                        <img src="/assets/img/Ratio 3-2/BAKUS1.jpg" alt="VitiBot">
                         <div class="portfolio-title">VitiBot - Vineyard Robotics</div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
-                    <a href="project-makara.html">
-                        <img src="assets/img/Ratio 3-2/BikeSide.png" alt="Makara Cycles">
+                    <a href="/pages/projects/project-makara.html?1">
+                        <img src="/assets/img/Ratio 3-2/BikeSide.png" alt="Makara Cycles">
                         <div class="portfolio-title">Makara Cycles</div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
                     <a href="project-cnrs.html">
-                        <img src="assets/img/Ratio 3-2/TIRREX.PNG" alt="CNRS">
+                        <img src="/assets/img/Ratio 3-2/TIRREX.PNG" alt="CNRS">
                         <div class="portfolio-title">TIRREX - XXL Robotics Platform</div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
                     <a href="project-auto.html">
-                        <img src="assets/img/Ratio 3-2/FSAE.PNG" alt="FSAE">
+                        <img src="/assets/img/Ratio 3-2/FSAE.PNG" alt="FSAE">
                         <div class="portfolio-title">FSAE</div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
                     <a href="project-auto.html">
-                        <img src="assets/img/Ratio 3-2/IKR_Iso.JPG" alt="IKR">
+                        <img src="/assets/img/Ratio 3-2/IKR_Iso.JPG" alt="IKR">
                         <div class="portfolio-title">Go-Karting</div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
                     <a href="project-fsae.html">
-                        <img src="assets/img/Ratio 3-2/Teeth.JPG" alt="3D Printing">
+                        <img src="/assets/img/Ratio 3-2/Teeth.JPG" alt="3D Printing">
                         <div class="portfolio-title">3D Printing</div>
                     </a>
                 </div>
@@ -161,7 +165,7 @@
             </div>
         </section>
 
-        <!-- Portfolio Section -->
+        <!-- Services Section (Clone of Portfolio Section) -->
         <section id="services" data-aos="fade-up">
             <h2>Services</h2>
             <div class="portfolio">
@@ -169,7 +173,7 @@
                 <div class="portfolio-wrapper">
                     <div class="portfolio-item">
                         <a href="project-vitibot.html">
-                            <img src="assets/img/Ratio 3-2/TurboSection2.png" alt="VitiBot">
+                            <img src="/assets/img/Ratio 3-2/TurboSection2.png" alt="VitiBot">
                             <div class="portfolio-title">Mechanical Design</div>
                         </a>
                     </div>
@@ -180,7 +184,7 @@
                 <div class="portfolio-wrapper">
                     <div class="portfolio-item">
                         <a href="project-vitibot.html">
-                            <img src="assets/img/Ratio 3-2/Hub_FEA.JPG" alt="VitiBot">
+                            <img src="/assets/img/Ratio 3-2/Hub_FEA.JPG" alt="VitiBot">
                             <div class="portfolio-title">Finite Element Analysis</div>
                         </a>
                     </div>
@@ -191,7 +195,7 @@
                 <div class="portfolio-wrapper">
                     <div class="portfolio-item">
                         <a href="project-vitibot.html">
-                            <img src="assets/img/Ratio 3-2/3d-printer.jpg" alt="VitiBot">
+                            <img src="/assets/img/Ratio 3-2/3d-printer.jpg" alt="VitiBot">
                             <div class="portfolio-title">Design for Additive Manufacturing</div>
                         </a>
                     </div>
@@ -202,7 +206,7 @@
                 <div class="portfolio-wrapper">
                     <div class="portfolio-item">
                         <a href="project-vitibot.html">
-                            <img src="assets/img/Ratio 3-2/chair4.png" alt="VitiBot">
+                            <img src="/assets/img/Ratio 3-2/chair4.png" alt="VitiBot">
                             <div class="portfolio-title">Topology Optimization</div>
                         </a>
                     </div>
@@ -228,7 +232,7 @@
                         <li><strong>Location:</strong> Reims, France</li>
                     </ul>
 
-                    <a class="cv-button" href="assets/cv/Sudarson_CV_English_Compressed.pdf" download>Download CV</a>
+                    <a class="cv-button" href="/assets/cv/Sudarson_CV_English_Compressed.pdf" download>Download CV</a>
                 </div>
 
                 <!-- Right: Contact Form -->
@@ -260,7 +264,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
     <!-- Load main.js -->
-    <script src="assets/js/main.js?1"></script>
+    <script src="/assets/js/main.js?1"></script>
 
 </body>
 </html>
