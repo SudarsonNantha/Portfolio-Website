@@ -1,0 +1,124 @@
+
+/* Updated project.css to match main.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+}
+
+/* Sidebar styling will be injected by main.css/sidebar.html */
+
+.main-content {
+  margin-left: 100px;
+  width: calc(100% - 200px);
+}
+
+/* Container for content */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+/* Carousel styling */
+.project-carousel {
+  max-width: 500px;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide {
+  padding: 0 10px;
+  filter: blur(4px);
+  transition: filter 0.3s ease;
+}
+
+.swiper-slide.swiper-slide-active {
+  filter: none;
+  transform: scale(1.05);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+}
+
+.carousel-fade-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Project Details */
+.project-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-details p {
+  margin-bottom: 1.2rem;
+  color: #555;
+}
+
+.project-info {
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+}
+
+.project-info strong {
+  display: inline-block;
+  width: 140px;
+  color: #222;
+}
+
+/* Back Button */
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f0f0f0;
+  margin-top: 60px;
+}

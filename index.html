@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Sudarson Nanthacoumarane | Portfolio </title>
+    <script>
+      fetch('head.html')
+        .then(response => response.text())
+        .then(data => {
+          document.head.insertAdjacentHTML('beforeend', data);
+        });
+    </script>
+
+    <link rel="stylesheet" href="assets/css/main.css?2">
+    <meta charset="UTF-8">
+</head>
+
+
+<body data-page="index">
+
+    <!-- Scroll Progress Indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="scrollBar"></div>
+    </div>
+
+    <div id="sidebar-container"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Hero Section -->
+        <header id="home">
+            <div class="header-overlay" data-aos="fade-up">
+                <h1 data-aos="fade-up">Quality Engineering Starts Here</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Mechanical Design / FEA Simulation  </p>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="about-layout">
+                <img src="assets/img/profile-picture.jpeg" alt="About Me">
+                <div class="about-text">
+                    <p>Mechanical Engineer with 4+ years of R&D experience in robotics and automotive applications. Proven track record in CAD/CAE design, FEA, and product lifecycle management. Seeking innovation-driven opportunities to develop high-performance mechanical systems.</p>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-column design" data-tooltip="CAD, modeling, and mechanical design tools.">
+                    <h3>Mechanical Design</h3>
+                    <ul>
+                        <li>SolidWorks + PDM</li>
+                        <li>ANSYS Mechanical</li>
+                        <li>CATIA V5</li>
+                        <li>Inventor</li>
+                        <li>PTC Creo</li>
+                    </ul>
+                </div>
+
+                <div class="skill-column standards" data-tooltip="Engineering standards and best practices.">
+                    <h3>Standards</h3>
+                    <div class="badge-container">
+                        <span class="badge" data-tooltip="Framework for organizing GD&T standards.">ISO 14638</span>
+                        <span class="badge" data-tooltip="Symbols and rules for geometric tolerancing.">ISO 1101</span>
+                        <span class="badge" data-tooltip="Default rule for independent tolerancing.">ISO 8015</span>
+                        <span class="badge" data-tooltip="General tolerances for welded parts.">ISO 13920</span>
+                        <span class="badge" data-tooltip="Symbols for welded joint design and drawings.">ISO 2553</span>
+                        <span class="badge" data-tooltip="General tolerances for sheet metal dimensions.">ISO 2768</span>
+                    </div>
+                </div>
+
+                <div class="skill-column coding" data-tooltip="Scripting and technical computing languages.">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>MATLAB</li>
+                        <li>Bash Scripting</li>
+                        <li>IronPython</li>
+                    </ul>
+                </div>
+
+                <div class="skill-column lang" data-tooltip="Spoken and written communication skills.">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English – Fluent</li>
+                        <li>French – Intermediate</li>
+                        <li>Tamil – Native</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<section id="logo-banner" class="logo-banner" data-aos="fade-up">
+  <div class="logo-row">
+    <div class="logo-item" data-tooltip="Vitibot">
+      <img src="assets/img/logos/VitiBot_logo.png" alt="Vitibot Logo">
+    </div>
+    <div class="logo-item" data-tooltip="CNRS">
+      <img src="assets/img/logos/cnrs.png" alt="CNRS Logo">
+    </div>
+    <div class="logo-item" data-tooltip="Centrale Nantes">
+      <img src="assets/img/logos/Centrale_Nantes_Large.png" alt="Centrale Nantes Logo">
+    </div>
+    <div class="logo-item" data-tooltip="Makara Circle">
+      <img src="assets/img/logos/Makara_logo.png" alt="Makara Circle Logo">
+    </div>
+    <div class="logo-item" data-tooltip="BMSIT">
+      <img src="assets/img/logos/bmsit.png" alt="BMSIT Logo">
+    </div>
+  </div>
+</section>
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" data-aos="fade-up">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+
+                <div class="portfolio-item">
+                    <a href="project-vitibot.html">
+                        <img src="assets/img/Ratio 3-2/BAKUS1.jpg" alt="VitiBot">
+                        <div class="portfolio-title">VitiBot - Vineyard Robotics</div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="project-makara.html">
+                        <img src="assets/img/Ratio 3-2/BikeSide.png" alt="Makara Cycles">
+                        <div class="portfolio-title">Makara Cycles</div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="project-cnrs.html">
+                        <img src="assets/img/Ratio 3-2/TIRREX.PNG" alt="CNRS">
+                        <div class="portfolio-title">TIRREX - XXL Robotics Platform</div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="project-auto.html">
+                        <img src="assets/img/Ratio 3-2/FSAE.PNG" alt="FSAE">
+                        <div class="portfolio-title">FSAE</div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="project-auto.html">
+                        <img src="assets/img/Ratio 3-2/IKR_Iso.JPG" alt="IKR">
+                        <div class="portfolio-title">Go-Karting</div>
+                    </a>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="project-fsae.html">
+                        <img src="assets/img/Ratio 3-2/Teeth.JPG" alt="3D Printing">
+                        <div class="portfolio-title">3D Printing</div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="services" data-aos="fade-up">
+            <h2>Services</h2>
+            <div class="portfolio">
+
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-item">
+                        <a href="project-vitibot.html">
+                            <img src="assets/img/Ratio 3-2/TurboSection2.png" alt="VitiBot">
+                            <div class="portfolio-title">Mechanical Design</div>
+                        </a>
+                    </div>
+                    <h3>Mechanical Design </h3>
+                    <p>Clean and modern designs tailored to your needs.</p>
+                </div>
+
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-item">
+                        <a href="project-vitibot.html">
+                            <img src="assets/img/Ratio 3-2/Hub_FEA.JPG" alt="VitiBot">
+                            <div class="portfolio-title">Finite Element Analysis</div>
+                        </a>
+                    </div>
+                    <h3>Finite Element Analysis </h3>
+                    <p>Intuitive and user-friendly interfaces for all devices.</p>
+                </div>
+
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-item">
+                        <a href="project-vitibot.html">
+                            <img src="assets/img/Ratio 3-2/3d-printer.jpg" alt="VitiBot">
+                            <div class="portfolio-title">Design for Additive Manufacturing</div>
+                        </a>
+                    </div>
+                    <h3>Design for Additive Manufacturing </h3>
+                    <p>Unique brand identity and visual storytelling.</p>
+                </div>
+
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-item">
+                        <a href="project-vitibot.html">
+                            <img src="assets/img/Ratio 3-2/chair4.png" alt="VitiBot">
+                            <div class="portfolio-title">Topology Optimization</div>
+                        </a>
+                    </div>
+                    <h3>Topology Optimization </h3>
+                    <p>Unique brand identity and visual storytelling.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact" data-aos="fade-up">
+            <h2>Contact</h2>
+            <div class="contact-wrapper">
+                <!-- Left: Contact Info -->
+                <div class="contact-info">
+                    <p>Feel free to reach out for collaboration, freelance opportunities, or just to connect.</p>
+
+                    <ul>
+                        <li><strong>Phone:</strong> +33 07 54 19 78 07</li>
+                        <li><strong>Email:</strong> <a href="mailto:sudarson.nantha@outlook.com">sudarson.nantha@outlook.com</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/snantha" target="_blank">/snantha</a></li>
+                        <li><strong>Location:</strong> Reims, France</li>
+                    </ul>
+
+                    <a class="cv-button" href="assets/cv/Sudarson_CV_English_Compressed.pdf" download>Download CV</a>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name *" required>
+                        <input type="email" placeholder="Your Email *" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Number *" required>
+                        <input type="text" placeholder="Subject *" required>
+                    </div>
+                    <textarea placeholder="Message *" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Load main.js -->
+    <script src="assets/js/main.js?1"></script>
+
+</body>
+</html>
+

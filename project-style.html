@@ -1,0 +1,77 @@
+<!-- project-style.html -->
+<style>
+
+    html, body {
+      overflow-x: hidden;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 2rem;
+      flex-grow: 1;
+    }
+    .project-carousel {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+    .swiper-slide {
+      padding: 0 10px;
+      filter: blur(4px);
+      transition: filter 0.3s ease;
+    }
+    .swiper-slide.swiper-slide-active {
+      filter: none;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #333;
+    }
+    .carousel-fade-overlay {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 60px;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .project-details {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .project-details h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .project-details p {
+      margin-bottom: 1rem;
+    }
+    .project-info {
+      font-size: 0.95rem;
+      margin-top: 1.5rem;
+    }
+    .project-info strong {
+      display: inline-block;
+      width: 120px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #000;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+</style>

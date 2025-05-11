@@ -1,0 +1,72 @@
+// AOS.init();
+
+document.addEventListener('DOMContentLoaded', function (e) {
+
+ // Inject sidebar.html
+  fetch("sidebar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("sidebar-container").innerHTML = data;
+
+      // Only enable scroll tracking if on the homepage
+      if (document.body.dataset.page === "index") {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const id = entry.target.getAttribute("id");
+            if (entry.isIntersecting) {
+              document.querySelector(".sidebar a.active")?.classList.remove("active");
+              document.querySelector(`.sidebar a[href="#${id}"]`)?.classList.add("active");
+            }
+          });
+        }, {
+          threshold: 0.1,  // Lower means earlier detection
+          rootMargin: '0px 0px -40% 0px'  // triggers when section is 40% from bottom
+        });
+
+        document.querySelectorAll("section[id]").forEach(section => observer.observe(section));
+}
+
+        window.addEventListener("scroll", onScroll);
+        onScroll(); // trigger on load
+      }
+    });
+
+  // 2. Initialize AOS (Animate On Scroll)
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  } else {
+    console.warn('AOS not loaded');
+  }
+
+  // 3. Scroll Progress Bar
+  const progressBar = document.getElementById('scrollBar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    if (progressBar) {
+      progressBar.style.width = scrollPercent + '%';
+    }
+  });
+
+});
+
+
+// Fallback to activate "Contact" when near bottom of page
+window.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY + window.innerHeight;
+  const bottom = document.body.offsetHeight;
+
+  if (bottom - scrollPos < 100) {
+    document.querySelectorAll('.sidebar-link').forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#contact') {
+        link.classList.add('active');
+      }
+    });
+  }
+});
