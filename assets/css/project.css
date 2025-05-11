@@ -24,7 +24,7 @@ body {
 
 /* Carousel styling */
 .project-carousel {
-  max-width: 500px;
+  max-width: 400px;
   margin: 1rem auto;
   position: relative;
 }
@@ -36,7 +36,7 @@ body {
 
 .swiper-slide {
   padding: 0 10px;
-  filter: blur(4px);
+  filter: blur(0px);
   transition: filter 0.3s ease;
 }
 
@@ -73,6 +73,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .project-details h2 {
