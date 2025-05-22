@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function (e) {
 
-    // Inject sidebar.html
+    // 1. Inject sidebar.html
     fetch("/partials/sidebar.html?1")
         .then(res => res.text())
         .then(data => {
@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
         });
     }
 
-
     // 5. Fancybox config
     Fancybox.bind("[data-fancybox='project']", {
         loop: true,
@@ -99,6 +98,13 @@ document.addEventListener('DOMContentLoaded', function (e) {
             zoom: true
         }
     });
+
+    // 6. Open Links in new tab
+    document.querySelectorAll('a.new-tab').forEach(link => {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    });
+
 
 });
 
