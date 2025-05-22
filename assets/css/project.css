@@ -77,9 +77,12 @@ body {
   text-justify: inter-word;
 }
 
+.project-heading{
+  margin-bottom: 0.5rem;
+}
 .project-details h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .project-details p {
@@ -98,6 +101,13 @@ body {
   color: #222;
 }
 
+.highlight {
+  font-weight: bold;
+  color: #c0392b; Dark red highlight */
+  /*color: #0956c3; */
+}
+
+
 /* Back Button */
 .back-link {
   display: inline-block;
@@ -115,12 +125,4 @@ body {
   background: #111;
   color: #fff;
   border-color: #111;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 40px 20px;
-  background: #f0f0f0;
-  margin-top: 60px;
 }

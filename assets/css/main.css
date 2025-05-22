@@ -20,20 +20,21 @@ body {
 
 /* Main Layout */
 .main-content {
-  margin-left: 100px;
-  width: calc(100% - 200px);
+  margin-left: 0px;
+  width: calc(100% - 300px);
 }
 
 /* Header */
 header {
   height: 100vh;
-  background: url('../img/Inkscape/Grid1.png') no-repeat center center/cover;
+  background: url('/assets/img/Inkscape/Grid1.png') no-repeat center center/cover;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .header-overlay {
@@ -54,7 +55,7 @@ header {
   left: 0;
   width: 300px;
   height: 100vh;
-    background: linear-gradient(
+  background: linear-gradient(
     to right,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 1) 40%,
@@ -66,6 +67,7 @@ header {
   justify-content: center;
   padding: 2rem 1rem;
   z-index: 1000;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar h2 {
@@ -100,14 +102,15 @@ header {
 
 /* Sections */
 section {
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 3rem 9rem 3rem 9rem;
+  width: 100%;
 }
 
 #contact {
   min-height: 40vh;
+  background-color: #f7f7f6;
 }
+
 #contact::after {
   content: '';
   display: block;
@@ -221,7 +224,9 @@ section {
 }
 
 
-
+#about{
+  margin-top: 50px;
+}
 .about-layout {
   display: flex;
   flex-wrap: wrap;
@@ -244,11 +249,15 @@ section {
   margin-top: 1.5rem;
 }
 
+#portfolio{
+  background-color: #f7f7f6;
+}
+
 /* Portfolio and Services */
 .services, .portfolio {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .services img, .portfolio img {
@@ -459,7 +468,6 @@ section {
 
 .logo-banner {
   border-radius: 12px;
-  background-color: #fafafa;
   padding: 40px 20px;
   text-align: center;
 }
@@ -500,6 +508,6 @@ section {
 footer {
   text-align: center;
   padding: 40px 20px 40px 0px;
-  background: #f0f0f0;
+  background: #f7f7f6;
 }
 
