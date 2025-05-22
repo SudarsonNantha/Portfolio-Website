@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sudarson Nanthacoumarane | VitiBot</title>
+
+    <!-- Import common page fonts and attributes -->
+    <script>
+        fetch('/partials/head.html?1')
+            .then(response => response.text())
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <meta charset="UTF-8">
+    <!-- Import CSS  -->
+    <link rel="stylesheet" href="/assets/css/main.css?2">
+    <link rel="stylesheet" href="/assets/css/project.css?2">
+</head>
+
+<body data-page="project">
+
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div class="content-wrapper">
+
+            <!-- Project Carousel -->
+            <div class="project-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/BAKUS2.jpg?1" data-fancybox="project" data-caption="BAKUS P75L">
+                                <img src="/assets/img/Ratio 4-3/BAKUS2.jpg?2" alt="BAKUS P75L">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/BAKUS4.jpg" data-fancybox="project" data-caption="BAKUS P75S">
+                              <img src="/assets/img/Ratio 4-3/BAKUS4.jpg" alt="BAKUS P75S">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/BAKUS3.png?1" data-fancybox="project" data-caption="Electric Intervine Mower">
+                              <img src="/assets/img/Ratio 4-3/BAKUS3.png?2" alt="Electric Intervine Mower">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/BAKUS_Perche.png" data-fancybox="project" data-caption="BAKUS Tool Holder">
+                                <img src="/assets/img/Ratio 4-3/BAKUS_Perche.png" alt="BAKUS Tool Holder">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/BAKUS5.jpg" data-fancybox="project" data-caption="BAKUS robots at work in a vineyard">
+                                <img src="/assets/img/Ratio 4-3/BAKUS5.jpg" alt="Vineyards">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <!--
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    -->
+                </div>
+
+                <div class="carousel-fade-overlay"></div>
+
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+            <div class="project-heading">
+                <h2>VitiBot</h2>
+                <i><a href="https://vitibot.fr" class="new-tab">VitiBot</a> is a leading manufacturer of fully electric, autonomous vineyard robots based in the Champagne region of France.</i>
+            </div>
+            <p>I joined VitiBot as an intern while completing my master's thesis, and was quickly offered a full-time job in the mechanical team 3 months in to my internship. Drawing on prior experience at Makara Cycles, CNRS, and Centrale Nantes, I contributed to several core components of the BAKUS robot platform. My first major assignment was the design of an <span class="highlight">intervine mower</span> tailored to the BAKUS robot, where I was able to deliver a working prototype that achieved <span class="highlight">commercial success</span> within a year. This success led to further iterations in collaboration with key industry stakeholders.</p>
+            <p>In addition to the mower, I led and contributed to several critical engineering efforts including the redesign of the <span class="highlight">4-bar tool holder mechanism</span> to use fully electric linear actuators in place of electro-hydraulic actuators, the redesign of battery casings in thermoplastic to double their lifespan, the <span class="highlight">integration of high power electric motors</span> into existing robot hardware, and the redesign of various other stationary and active tools for the robot. With each of these endeavours, I honed my skills in FEA to validate not only my designs, but also the designs of my colleagues, and concurrently learned to use Python and <span class="highlight">ANSYS ACT</span> to automate my tasks and visualise results.</p>
+            <p>My most impactful contribution was leading the <span class="highlight">complete redesign</span> of the BAKUS robot chassis. This multi-year project was critical in preventing fatigue-related failures that could have triggered a full fleet recall. Under my technical leadership, we delivered a lighter, stronger chassis that preserved existing internal and external interfaces and could be seamlessly integrated with deployed units and manufacturing lines.</p>
+
+                <div class="project-info">
+                    <p><strong>Role:</strong>Mechanical Engineer</p>
+                    <p><strong>Projects:</strong>BAKUS Chassis, Intervine Mower, Batteries, Tool Holder Linear Actuator</p>
+                    <p><strong>Tools:</strong>Solidworks, Solidworks PDM, ANSYS Mechanical, 3D-printing slicers</p>
+                </div>
+
+                <a class="back-link" href="/index.html?1">&larr; Back to Portfolio</a>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                &copy; 2025 Sudarson Nanthacoumarane. All rights reserved.
+            </footer>
+        </div>
+    </div>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="/assets/js/main.js?4"></script>
+
+</body>
+</html>

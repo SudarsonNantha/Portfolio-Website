@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sudarson Nanthacoumarane | CNRS</title>
+
+    <!-- Import common page fonts and attributes -->
+    <script>
+        fetch('/partials/head.html?1')
+            .then(response => response.text())
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <meta charset="UTF-8">
+    <!-- Import CSS  -->
+    <link rel="stylesheet" href="/assets/css/main.css?2">
+    <link rel="stylesheet" href="/assets/css/project.css?1">
+</head>
+
+<body data-page="project">
+
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div class="content-wrapper">
+
+            <!-- Project Carousel -->
+            <div class="project-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/CRAFT.png" data-fancybox="project" data-caption="">
+                                <img src="/assets/img/Ratio 4-3/CRAFT.png" alt="CRAFT">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/TIRREX.png" data-fancybox="project">
+                              <img src="/assets/img/Ratio 4-3/TIRREX.png" alt="TIRREX">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="/assets/img/Ratio 4-3/CRAFT2.png" data-fancybox="project" data-caption="">
+                                <img src="/assets/img/Ratio 4-3/CRAFT2.png" alt="CRAFT">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <!--
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    -->
+                </div>
+
+                <div class="carousel-fade-overlay"></div>
+
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+            <div class="project-heading">
+                <h2>Centre national de la recherche scientifique (CNRS)</h2>
+                <i><a href="https://www.cnrs.fr/fr" class="new-tab">CNRS</a> is the French state research organisation and is the largest fundamental science agency in Europe.</i>
+            </div>
+            <p>The <a href="https://tirrex.fr/plateforme/xxl/" class="new-tab">XXL Robotics Platform</a> is one of the seven arms of the <a href="https://tirrex.fr/" class="new-tab">TIRREX Technology Program</a>, an ambitious project bringing together all the major players in public French robotics research (CNRS, INRIA, CEA, INRAe), aimed at creating a cable driven robot capable of spanning vast distances. <span class="highlight">Cable-Driven Parallel Robots (CDPR)</span> are a class of parallel robots that use cables to link the end effector to actuators instead of rigid links. Most existing CDPRs in the market only use cables to translate the robot in 3D-space; this project however, aims to use cables to actuate the end effector of the robot as well.</p>
+            <p>During the summer break of my master's programme, I worked with <a href="https://www.ls2n.fr/annuaire/Stephane%20CARO/" class="new-tab">Dr. Stéphane Caro</a> - Research Director at CNRS and a world leader in the field of CDPRs - to design the initial concepts for the XXL Robotics Platform. As a member of the <a href="https://www.ls2n.fr/equipe/romas/" class="new-tab">RoMaS team</a>, I worked closely with the researchers there to <span class="highlight">study, design, and test</span> cable driven actuators at <a href="https://www.ls2n.fr/" class="new-tab">Laboratoire des sciences du numérique de Nantes (LS2N)</a>. In addition to my design efforts, I also conducted months-long experiments and authored a research paper with <a href="https://scholar.google.com/citations?user=OvwspU0AAAAJ&hl=fr" class="new-tab">Dr. Bozhao Wang</a> to characterize the creep properties of polymer cables used in CDPRs. <span class="highlight"></span> </p>
+                <div class="project-info">
+                    <p><strong>Role:</strong>Mechanical Research Engineer</p>
+                    <p><strong>Projects:</strong>Structure Design, Robot Arm Design, Differential Design</p>
+                    <p><strong>Tools:</strong>Solidworks, Solidworks Motion, CATIA V5</p>
+                    <p><strong>Publications:</strong><a href="https://hal.science/hal-03758221" class="new-tab">Polymer Cable Characterization in Cable-Drive Parallel Robots</a></p>
+                </div>
+
+                <a class="back-link" href="/index.html?1">&larr; Back to Portfolio</a>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                &copy; 2025 Sudarson Nanthacoumarane. All rights reserved.
+            </footer>
+        </div>
+    </div>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="/assets/js/main.js?3"></script>
+
+</body>
+</html>
