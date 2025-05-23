@@ -6,35 +6,49 @@ body {
   line-height: 1.6;
   color: #333;
   display: flex;
+  overflow-x: hidden;
 }
 
 /* Sidebar styling will be injected by main.css/sidebar.html */
 
 .main-content {
+  /*
   margin-left: 100px;
   width: calc(100% - 200px);
+  */
 }
 
 /* Container for content */
 .content-wrapper {
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 20px 20px;
 }
 
 /* Carousel styling */
 .project-carousel {
-  max-width: 400px;
   margin: 1rem auto;
   position: relative;
+  overflow: hidden;
 }
 
 .swiper-container {
   width: 100%;
+  max-width: 100%;
+  overflow: visible;
   padding-bottom: 2rem;
 }
 
+.swiper-wrapper {
+  width: 100%;
+  display: flex;
+}
+
 .swiper-slide {
+  flex-shrink: 0;
+  width:70%; /* Optional: or set to 100% or 80% */
+  /*box-sizing: border-box;*/
+  max-width: 400px;
   padding: 0 10px;
   filter: blur(0px);
   transition: filter 0.3s ease;
@@ -42,15 +56,19 @@ body {
 
 .swiper-slide.swiper-slide-active {
   filter: none;
+  opacity: 1;
   transform: scale(1.05);
 }
 
 .swiper-slide img {
   width: 100%;
   height: auto;
+  max-height: 300px; /* ✅ Set max size */
+  object-fit: contain;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -72,9 +90,11 @@ body {
 .project-details {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 20px;
+  /*padding: 20px 20px;*/
   text-align: justify;
   text-justify: inter-word;
+  padding: 3% 7% 3% 7%;
+  width: 100%;
 }
 
 .project-heading{

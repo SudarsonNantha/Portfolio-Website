@@ -250,6 +250,7 @@ header {
     display: none;
   }
 
+  
 
 /*
   .sidebar > ul {
@@ -515,6 +516,17 @@ section {
 .about-text p{
   margin-top: 1.5rem;
 }
+
+@media (max-width: 1100px) {
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .about-text {
+    width: 100%; /* ensures full width on mobile */
+  }
+}
+
 
 #portfolio{
   background-color: #f7f7f6;
