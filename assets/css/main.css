@@ -86,7 +86,7 @@ header {
   padding: 5px;
   width: 60px;
 }
-
+/*
 .sidebar ul {
   list-style: none;
 }
@@ -107,6 +107,7 @@ header {
 .sidebar ul li.active a svg {
   fill: var(--accent-clr);
 }
+*/
 
 .sidebar .sidebar a.active,
 .sidebar .sidebar a:hover {
@@ -249,130 +250,21 @@ header {
   .sidebar h3 {
     display: none;
   }
-
-  
-
-/*
-  .sidebar > ul {
-    padding: 0;
-    display: grid;
-    grid-auto-columns: 60px;
-    grid-auto-flow: column;
-    align-items: center;
-    overflow-x: scroll;
-  }
-
-  .sidebar ul li {
-    height: 100%;
-  }
-
-  .sidebar ul a,
-  .sidebar ul .dropdown-btn {
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    border-radius: 0;
-    justify-content: center;
-  }
-
-  .sidebar ul li span,
-  .sidebar ul li:first-child,
-  .dropdown-btn svg:last-child {
-    display: none;
-  }
-
-  .sidebar ul li .sub-menu.show {
-    position: fixed;
-    bottom: 60px;
-    left: 0;
-    box-sizing: border-box;
-    height: 60px;
-    width: 100%;
-    background-color: var(--hover-clr);
-    border-top: 1px solid var(--line-clr);
-    display: flex;
-    justify-content: center;
-  }
-
-  .sidebar ul li .sub-menu.show > div {
-    overflow-x: auto;
-  }
-
-  .sidebar ul li .sub-menu.show li {
-    display: inline-flex;
-  }
-
-  .sidebar ul li .sub-menu.show a {
-    box-sizing: border-box;
-    padding: 1em;
-    width: auto;
-    justify-content: center;
-  }
-    */
 }
 
 
 
-/* Sidebar */
-/*
-.sidebar {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100vh;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 40%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-  z-index: 1000;
-  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
-}
-
-.sidebar h2 {
-  align-self: flex-start;
-  margin-bottom: 1rem;
-}
-
-.sidebar a {
-  margin: 15px 0;
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.3s;
-}
-
-.sidebar a.active,
-.sidebar a:hover {
-  color: #007bff;
-}
-
-.sidebar-link.active {
-  font-weight: bold;
-  color: #007bff;
-}
-
-.text-active {
-  color: #faca50;
-}
-
-*/
 
 /* Sections */
 section {
   padding: 3% 7% 3% 7%;
   width: 100%;
 }
+
+section h2{
+  margin-bottom: 0.8rem;
+}
+
 
 #contact {
   min-height: 40vh;
@@ -495,6 +387,7 @@ section {
 #about{
   margin-top: 50px;
 }
+
 .about-layout {
   display: flex;
   flex-wrap: wrap;
@@ -558,8 +451,16 @@ section {
 .portfolio-wrapper {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px; 
 }
+
+.portfolio-wrapper p{
+  font-size: 1rem;
+  width: 90%;
+  margin: 0 auto; 
+  text-align: justify;
+}
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -579,19 +480,20 @@ section {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 1px;
   font-weight: 500;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
+/* Use this to only show the title when hovering
 .portfolio-item:hover .portfolio-title {
   opacity: 1;
 }
-
+*/
 
 
 /* Scroll Progress Bar */
