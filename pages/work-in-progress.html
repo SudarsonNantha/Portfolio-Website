@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type = "image/png" href = "/assets/img/logos/SN-logo.png">
+
+    <title>Sudarson Nanthacoumarane | Work in progress</title>
+
+    <!-- Import common page fonts and attributes -->
+    <script>
+        fetch('/partials/head.html?1')
+            .then(response => response.text())
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+
+    <!-- Import CSS  -->
+    <link rel="stylesheet" href="/assets/css/main.css?2">
+    <link rel="stylesheet" href="/assets/css/project.css?1">
+
+    <style>
+
+
+    .coming-soon {
+      text-align: center;
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      /*border-left: 5px solid #a83232; */
+      margin-bottom: 3rem;
+    }
+
+    [data-page="in-progress"] .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* optional: to horizontally center too */
+    }
+
+
+    .coming-soon h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .coming-soon p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .gears {
+      font-size: 2rem;
+      animation: rotate 1s linear infinite;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+
+<body data-page="in-progress">
+
+    <div id="sidebar-container"></div>
+
+    <div class="main-content">
+        <div class="content-wrapper">
+
+            <div class="coming-soon">
+                <div class="gears">⚙️</div>
+                <h1>Engineering in Progress</h1>
+                <p>This section is still in the works. Check back soon to see what I’ve been building!</p>
+            </div>
+
+            <!-- Project Details -->
+                <a class="back-link" href="/index.html#services">&larr; Back to Portfolio</a>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Sudarson Nanthacoumarane. All rights reserved.
+        </footer>
+    </div>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="/assets/js/main.js?12"></script>
+
+</body>
+</html>

@@ -39,7 +39,7 @@ body {
 /* Header */
 header {
   height: 100vh;
-  background: url('/assets/img/Inkscape/Grid2.png') no-repeat center center/cover;
+  background: url('/assets/img/test\ render\ max.JPG') no-repeat center center/cover;
   color: white;
   display: flex;
   align-items: center;
@@ -205,6 +205,7 @@ header {
 @media (max-width: 800px) {
   body {
     grid-template-columns: 1fr;
+    padding-bottom: 60px;
   }
 
   main {
@@ -324,7 +325,7 @@ section h2{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 .skill-column {
@@ -507,7 +508,11 @@ section h2{
 /*                 PORTFOLIO AND SERVICES                   */
 /*==========================================================*/
 
-#portfolio{
+#skills{
+  background-color: #f7f7f6;
+}
+
+#services{
   background-color: #f7f7f6;
 }
 
@@ -588,7 +593,7 @@ section h2{
 
 #contact {
   min-height: 40vh;
-  background-color: #f7f7f6;
+  /*background-color: #f7f7f6;*/
 }
 
 #contact::after {
@@ -709,6 +714,7 @@ section h2{
 /*==========================================================*/
 
 footer {
+  height: 100px;
   text-align: center;
   padding: 40px 20px 40px 0px;
   background: #f7f7f6;
