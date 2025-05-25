@@ -48,7 +48,7 @@
             <div class="header-overlay" data-aos="fade-up">
                 <h1>Sudarson Nanthacoumarane</h1>
                 <div class="type-container">
-                    <p data-typewriter="Engineering,Simulations,Manufacturing"></p>
+                    <p data-typewriter="Engineering,Simulation,Manufacturing"></p>
                 </div>
              </div>
         </header>
@@ -194,15 +194,23 @@
 
                 <div class="portfolio-item">
                     <a href="/pages/work-in-progress.html">
-                        <img src="/assets/img/Ratio 3-2/TurboSection2.png" alt="VitiBot">
+                        <img src="/assets/img/Ratio 3-2/TurboSection2.png" alt="Design">
                         <div class="portfolio-title">Mechanical Design</div>
                     </a>
                 </div>
 
                 <div class="portfolio-item">
                     <a href="/pages/work-in-progress.html">
-                        <img src="/assets/img/Ratio 3-2/Hub_FEA.JPG" alt="VitiBot">
+                        <img src="/assets/img/Ratio 3-2/Hub_FEA.JPG" alt="FEA">
                         <div class="portfolio-title">Finite Element Analysis</div>
+                    </a>
+                </div>
+
+
+                <div class="portfolio-item">
+                    <a href="/pages/work-in-progress.html">
+                        <img src="/assets/img/Ratio 3-2/front_hub_censored.png" alt="GD&T">
+                        <div class="portfolio-title">GD&T</div>
                     </a>
                 </div>
 
@@ -291,18 +299,25 @@
                 </div>
 
                 <!-- Right: Contact Form -->
-                <form class="contact-form">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="7cc48de7-389a-4270-87d7-4a11d9288065">
+
                     <div class="form-row">
-                        <input type="text" placeholder="Your Name *" required>
-                        <input type="email" placeholder="Your Email *" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="You email" required>
                     </div>
+
                     <div class="form-row">
-                        <input type="text" placeholder="Your Number *" required>
-                        <input type="text" placeholder="Subject *" required>
+                        <input type="text" name="phone" placeholder="Your Phone Number">
+                        <input type="text" name="subject" placeholder="Subject">
                     </div>
-                    <textarea placeholder="Message *" required></textarea>
+
+                    <textarea name="message" required></textarea>
                     <button type="submit">Send Message</button>
+
                 </form>
+
             </div>
         </section>
 
