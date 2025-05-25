@@ -168,7 +168,7 @@ body {
 
 
 .highlight {
-  font-weight: bold;
+  font-weight: 600;
   color: #c0392b; /*Dark red highlight */
   /*color: #0956c3; */
 }

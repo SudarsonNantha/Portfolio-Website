@@ -238,7 +238,6 @@ header h1 {
 }
 
 
-
 @media (max-width: 800px) {
   body {
     grid-template-columns: 1fr;
@@ -248,6 +247,15 @@ header h1 {
   /* Header */
   header {
     background: url('/assets/img/bike4_portrait.png') no-repeat center center/cover;
+  }
+
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  [data-typewriter] {
+    font-size: 2rem;
   }
 
   main {
